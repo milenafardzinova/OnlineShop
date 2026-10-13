@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShop
 {
-    internal class CartItem
+    public class CartItem
     {
         public Product Product { get; set; }
         public int Count { get; set; }

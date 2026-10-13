@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShop
 {
-    internal class Product
+    public class Product
     {
         public decimal Price { get; }
         public string Name { get; }

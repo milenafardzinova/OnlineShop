@@ -33,9 +33,9 @@
             label1 = new Label();
             splitter1 = new Splitter();
             panelProduct = new Panel();
+            labelDescription = new Label();
             labelProductName = new Label();
             label2 = new Label();
-            labelDescription = new Label();
             panelCatalog.SuspendLayout();
             panelProduct.SuspendLayout();
             SuspendLayout();
@@ -54,10 +54,11 @@
             // 
             listBoxCatalog.FormattingEnabled = true;
             listBoxCatalog.ItemHeight = 15;
-            listBoxCatalog.Location = new Point(50, 101);
+            listBoxCatalog.Location = new Point(50, 86);
             listBoxCatalog.Name = "listBoxCatalog";
-            listBoxCatalog.Size = new Size(188, 289);
+            listBoxCatalog.Size = new Size(188, 349);
             listBoxCatalog.TabIndex = 1;
+            listBoxCatalog.SelectedIndexChanged += listBoxCatalog_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -88,6 +89,16 @@
             panelProduct.Size = new Size(464, 450);
             panelProduct.TabIndex = 2;
             // 
+            // labelDescription
+            // 
+            labelDescription.BackColor = SystemColors.ActiveCaption;
+            labelDescription.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelDescription.Location = new Point(36, 151);
+            labelDescription.Name = "labelDescription";
+            labelDescription.Size = new Size(277, 127);
+            labelDescription.TabIndex = 3;
+            labelDescription.Text = "Описание товара";
+            // 
             // labelProductName
             // 
             labelProductName.AutoSize = true;
@@ -106,16 +117,6 @@
             label2.Size = new Size(98, 15);
             label2.TabIndex = 1;
             label2.Text = "Карточка товара";
-            // 
-            // labelDescription
-            // 
-            labelDescription.BackColor = SystemColors.ActiveCaption;
-            labelDescription.Font = new Font("Segoe UI Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            labelDescription.Location = new Point(36, 151);
-            labelDescription.Name = "labelDescription";
-            labelDescription.Size = new Size(277, 127);
-            labelDescription.TabIndex = 3;
-            labelDescription.Text = "Описание товара";
             // 
             // FormCatalog
             // 

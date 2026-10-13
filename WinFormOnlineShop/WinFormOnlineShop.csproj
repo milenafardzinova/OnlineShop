@@ -8,4 +8,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\OnlineShop\Cart.cs" Link="Cart.cs" />
+    <Compile Include="..\OnlineShop\CartItem.cs" Link="CartItem.cs" />
+    <Compile Include="..\OnlineShop\Catalog.cs" Link="Catalog.cs" />
+    <Compile Include="..\OnlineShop\Product.cs" Link="Product.cs" />
+  </ItemGroup>
+
 </Project>

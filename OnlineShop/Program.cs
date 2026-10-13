@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShop
 {
-    internal class Program
+    public class Program
     {
         static Catalog catalog = new Catalog();
         static void ShowCatalog()
